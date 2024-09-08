@@ -12,31 +12,18 @@
 
 <body>
   <header class="header">
-    <nav class="navbar bg-primary">
-      <div class="container d-flex space-between align-center">
-        <div class="logo py-16">
-          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
-            alt="logo" class="w-100p">
-        </div>
-        <ul class="menu d-flex g-64 py-25">
-          <li><a class="white f-sm" href="#">門市據點</a></li>
-          <li><a class="white f-sm" href="#">系列鏡框</a></li>
-          <li><a class="white f-sm" href="#">部落格</a></li>
-          <li><a class="white f-sm" href="#">常見問題</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="banner">
-      <div class="container h-100">
-        <div class="slogan text-end d-flex f-column jcc h-100">
-          <p class="f-36">Promise-Desert 2020 早春系列</p>
-          <h1 class="title f-64">看得清，才能看得遠</h1>
-          <div>
-            <a href="#" class="btn bg-primary white px-6 py-12 f-20 mt-10">立即購買</a>
+    <%- include('./layout/navbar.ejs'); %>
+      <div class="banner">
+        <div class="container h-100">
+          <div class="slogan text-end d-flex f-column jcc h-100">
+            <p class="f-36">Promise-Desert 2020 早春系列</p>
+            <h1 class="title f-64">看得清，才能看得遠</h1>
+            <div>
+              <a href="#" class="btn bg-primary white px-6 py-12 f-20 mt-10">立即購買</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </header>
   <section class="service">
     <div class="container pt-80 pb-80">
@@ -89,11 +76,11 @@
       <h2 class="title f-48 white text-center pb-48">聯名設計鏡框</h2>
       <div class="box d-flex red">
         <div class="pic1 w-50p">
-          <img src="../assets/images/home-section4-1.png" alt="DOUBLE A+"  class="w-100p">
+          <img src="../assets/images/home-section4-1.png" alt="DOUBLE A+" class="w-100p">
           <p class="bg-white text-center f-48 fw-900 italic">DOUBLE A+</p>
         </div>
         <div class="pic2 w-50p">
-          <img src="../assets/images/home-section4-2.png" alt="YOUTH"  class="w-100p">
+          <img src="../assets/images/home-section4-2.png" alt="YOUTH" class="w-100p">
           <p class="bg-white text-center f-48 fw-900 italic">YOUTH</p>
         </div>
       </div>
@@ -167,51 +154,8 @@
       </form>
     </div>
   </section>
-  <footer class="footer bg-primary">
-    <div class="container">
-      <div class="top-box white d-flex space-between pt-48 pb-32 bb-white">
-        <div class="left-box">
-          <ul class="link d-flex g-48">
-            <li>首頁</li>
-            <li>系列鏡框</li>
-            <li>門市據點</li>
-            <li>部落格</li>
-            <li>常見問題</li>
-          </ul>
-          <div class="footer-info">
-            <ul>
-              <li>
-                <span class="icon material-symbols-outlined f-36">call</span>
-                <span class="phone f-36">0800-000-000</span>
-              </li>
-              <li>
-                <span class="icon material-symbols-outlined f-36">mail</span>
-                <span class="email f-36">glasses@business.com</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="right-box">
-          <ul class="media d-flex g-32">
-            <li class="w-48"><img src="../assets/images/ic-social-fb.png" alt="fb" class="w-100p"></li>
-            <li class="w-48"><img src="../assets/images/ic_social_ig.png" alt="ig" class="w-100p"></li>
-            <li class="w-48"><img src="../assets/images/ic_social_line.png" alt="line" class="w-100p"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright d-flex space-between pt-32 pb-32">
-        <p class="white">Copyright © 2020 Glasses.All rights reserved.</p>
-        <ul class="d-flex g-48">
-          <li>
-            <a href="#" title="隱私權政策" class="white">隱私權政策</a>
-          </li>
-          <li>
-            <a href="#" title="服務條款" class="white">服務條款</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  <%- include('./layout/footer.ejs'); %>
+
   <script type="module" src="../main.js"></script>
 </body>
 
